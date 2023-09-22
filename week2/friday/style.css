@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f4f6;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+nav ul li {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+nav svg {
+  width: 36px;
+  height: 36px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main .messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  body {
+    flex-direction: row;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
