@@ -16,6 +16,24 @@
   <body>
     <div class="card">
       <h1>Register</h1>
+      <form id="register-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div class="input-group">
+          <label for="password-confirmation">Confirm Password</label>
+          <input id="password-confirmation" name="password-confirmation" type="password" />
+        </div>
+        <button id="register-btn" type="submit">Register</button>
+      </form>
+      <p id="error-msg"></p>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
