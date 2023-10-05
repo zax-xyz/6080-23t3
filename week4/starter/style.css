@@ -38,7 +38,7 @@ nav > ul {
   overflow-x: auto;
 }
 
-nav > ul > li {
+nav > ul > li button {
   width: 56px;
   height: 56px;
   flex-shrink: 0;
@@ -49,16 +49,15 @@ nav > ul > li {
   border-radius: 100%;
   border: 1px solid transparent;
   transition: border-color 0.15s;
-  cursor: pointer;
 }
 
-nav > ul > li.selected {
+nav > ul > li.selected button {
   border-color: rgb(var(--accent));
   color: rgb(var(--accent));
   font-weight: 600;
 }
 
-nav > ul > li:hover {
+nav > ul > li button:hover {
   border-color: rgb(var(--accent));
 }
 
