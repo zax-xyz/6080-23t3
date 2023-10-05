@@ -59,7 +59,8 @@ let selectedUser = document.querySelector("nav > ul > li.selected");
 
 const users = document.querySelectorAll("nav > ul > li");
 users.forEach(user => {
-  user.children[0].addEventListener("click", () => {
+  const button = user.children[0];
+  button.addEventListener("click", () => {
     selectedUser.classList.remove("selected");
     selectedUser = user;
     selectedUser.classList.add("selected");
