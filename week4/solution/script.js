@@ -1,6 +1,16 @@
 const AVATAR = "https://avatars.githubusercontent.com/u/25019123?v=4";
 const USERNAME = "Michael";
 
+const allMessages = {
+  1: [],
+  2: [],
+  3: [],
+  4: [],
+  5: [],
+  6: [],
+  7: [],
+};
+
 const messageList = document.getElementById("message-list");
 
 const createMessage = (avatar, username, message) => {
@@ -28,14 +38,39 @@ const createMessage = (avatar, username, message) => {
 
 const messageForm = document.getElementById("input-form");
 const messageInput = document.getElementById("message-input");
+
+const renderMessages = user => {
+  // clear messages
+  while (messageList.firstChild) {
+    messageList.removeChild(messageList.firstChild);
+  }
+
+  const messages = allMessages[user];
+  if (messages.length === 0) {
+    messageList.append("There are no messages yet. Type something to send one!");
+  } else {
+    for (const message of allMessages[user]) {
+      createMessage(AVATAR, USERNAME, message);
+    }
+  }
+};
+
+let selectedUser = document.querySelector("nav > ul > li.selected");
+
+const users = document.querySelectorAll("nav > ul > li");
+users.forEach(user => {
+  user.children[0].addEventListener("click", () => {
+    selectedUser.classList.remove("selected");
+    selectedUser = user;
+    selectedUser.classList.add("selected");
+    renderMessages(selectedUser.innerText);
+  });
+});
+
 messageForm.addEventListener("submit", e => {
   e.preventDefault();
 
-  if (!messageForm.dataset.hasMessages) {
-    messageList.removeChild(messageList.childNodes[0]);
-    messageForm.dataset.hasMessages = true;
-  }
-
-  createMessage(AVATAR, USERNAME, messageInput.value);
+  allMessages[selectedUser.innerText].push(messageInput.value);
+  renderMessages(selectedUser.innerText);
   messageInput.value = "";
 });
