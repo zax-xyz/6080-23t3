@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="root">
+      <search-page></search-page>
+    </div>
+
+    <template id="search-page">
+      <h1>Search Course</h1>
+      <form>
+        <input type="text" name="search" />
+        <button type="submit">Search</button>
+      </form>
+
+      <ul class="course-list"></ul>
+    </template>
+
+    <template id="course-page">
+      <a href="#">back</a>
+
+      <h1><slot name="course-name"></slot></h1>
+
+      <h2>Description</h2>
+      <p><slot name="description"></slot></p>
+
+      <h2>Requirements</h2>
+      <p><slot name="requirements"></slot></p>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
