@@ -13,7 +13,18 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <search-page></search-page>
+    </div>
+
+    <template id="search-page">
+      <h1>Search Course</h1>
+      <form>
+        <input type="text" name="course" />
+        <button type="submit">Search</button>
+      </form>
+    </template>
+
     <script src="script.js"></script>
   </body>
 </html>
