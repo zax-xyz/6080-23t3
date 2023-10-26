@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      button {
+        padding: 6px 12px;
+        background: #93c5fd;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 0;
+      }
+
+      button:focus {
+        /* The default focus outline is ugly... */
+        outline: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>Check out these photos :D</p>
+
+    <div>
+      <button>Photo 1</button>
+      <button>Photo 2</button>
+      <button>Photo 3</button>
+      <button>Photo 4</button>
+      <button>Photo 5</button>
+      <button>Photo 6</button>
+    </div>
+
+    <p>
+      Want more photos? Click
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">here</a>.
+    </p>
+
+    <script>
+      const links = [
+        "https://cdn.discordapp.com/attachments/812268715059314708/1156109068704944140/DSC00324.jpg",
+        "https://cdn.discordapp.com/attachments/812268715059314708/1156485730290380830/DSC00344.jpg",
+        "https://cdn.discordapp.com/attachments/812268715059314708/1156485730814677055/DSC00350.jpg",
+        "https://cdn.discordapp.com/attachments/812268715059314708/1156485731427037294/DSC00358.jpg",
+        "https://cdn.discordapp.com/attachments/812268715059314708/1156485732974731294/DSC00371.jpg",
+        "https://cdn.discordapp.com/attachments/812268715059314708/1153508982065987594/Snapchat-1018333372.jpg",
+      ];
+      Array.from(document.querySelectorAll("button")).forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          window.open(links[i]);
+        });
+      });
+    </script>
+  </body>
+</html>

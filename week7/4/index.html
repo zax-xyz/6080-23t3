@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="tabs" id="tabs">
+        <button class="tab active">Login</button>
+        <button class="tab">Register</button>
+      </div>
+      <div class="panels" id="panels">
+        <div class="panel active">
+          <form class="form">
+            <label>
+              <p>Username</p>
+              <input />
+            </label>
+            <label>
+              <p>Password</p>
+              <input />
+            </label>
+
+            <button type="submit" id="submit-btn" class="submit">Log In</button>
+
+            <p>No account? <a href="#" id="register-link" class="link">Register here</a></p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <form class="form">
+            <label>
+              <p>Username</p>
+              <input />
+            </label>
+            <label>
+              <p>Password</p>
+              <input />
+            </label>
+            <label>
+              <p>Confirm Password</p>
+              <input />
+            </label>
+
+            <button type="submit" id="submit-btn" class="submit">Register</button>
+
+            <p>
+              Already have an account? <a href="#" id="register-link" class="link">Login here</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
