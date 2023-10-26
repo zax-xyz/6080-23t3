@@ -6,11 +6,15 @@
 
 Everyone has different preferences for how they live their life and accessibility is about accommodating everyone.
 
-### Wikipedia
+### [Wikipedia](https://en.wikipedia.org/wiki/Accessibility)
 
 Accessibility is the design of products, devices, services, vehicles, or environments so as to be usable by people with disabilities.
 
-### w3
+Or, from the article on [web accessibility](https://en.wikipedia.org/wiki/Web_accessibility):
+
+Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed. When sites are correctly designed, developed and edited, more users have equal access to information and functionality.
+
+### [w3](https://www.w3.org/WAI/fundamentals/accessibility-intro/#what)
 
 Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them. More specifically, people can:
 
