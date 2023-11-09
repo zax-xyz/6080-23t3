@@ -35,13 +35,11 @@ export const RegisterPage = () => {
         <h1 className="text-2xl">Register</h1>
         <form
           className="flex flex-col gap-4"
-          onSubmit={(e) =>
-            handleSubmit((data) => {
-              console.log(data);
-              setAuthentiated(true);
-              navigate("/dashboard");
-            })(e)
-          }
+          onSubmit={handleSubmit((data) => {
+            console.log(data);
+            setAuthentiated(true);
+            navigate("/dashboard");
+          })}
         >
           <label className="flex flex-col">
             Username
