@@ -1,5 +1,11 @@
 # Week 9
 
+## Routing
+
+- Don't hand-roll your own routing and page navigation!
+- Use [React Router](https://reactrouter.com/en/main)
+  - If you don't use React Router, chances are you're going to lose marks in your assignment...
+
 ## Forms
 
 - As I briefly mentioned last week, [React Hook Form](https://react-hook-form.com/) is very useful for managing forms in React, especially as they get complex
