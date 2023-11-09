@@ -2,7 +2,9 @@
 
 ## Forms
 
-As I briefly mentioned last week, [React Hook Form](https://react-hook-form.com/) is very useful for managing forms in React, especially as they get complex, handling managing state for you and making validation significantly easier, all while being more performant than the typical way of managing forms.
+- As I briefly mentioned last week, [React Hook Form](https://react-hook-form.com/) is very useful for managing forms in React, especially as they get complex
+  - Handles managing state for you and makes validation significantly easier, all while being more performant than the typical way of managing forms.
+- Would recommend using with [Zod](https://zod.dev/) for validation (see [resolver docs](https://react-hook-form.com/docs/useform#resolver))
 
 ## Fetching Data
 
