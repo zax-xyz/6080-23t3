@@ -36,6 +36,7 @@ export const LoginPage = () => {
             navigate("/dashboard");
           })}
         >
+          {/* This code is very repetitive and annoying to write! You should figure out how to modularise this (create more components) */}
           <label className="flex flex-col">
             Username
             <Input
@@ -47,6 +48,7 @@ export const LoginPage = () => {
           {errors.username && (
             <span className="text-red-600">{errors.username.message}</span>
           )}
+
           <label className="flex flex-col">
             Password
             <Input
@@ -58,6 +60,7 @@ export const LoginPage = () => {
           {errors.password && (
             <span className="text-red-600">{errors.password.message}</span>
           )}
+
           <Button type="submit">Login</Button>
         </form>
         <span>
