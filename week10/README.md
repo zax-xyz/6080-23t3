@@ -18,4 +18,4 @@ Darian (one of the other tutors) made a really small [practice exam](https://git
 
 ## MyExperience
 
-Please fill [MyExperience](https://myexperience.unsw.edu.au/unsw/) out! 🙏
+Please fill [MyExperience](https://myexperience.unsw.edu.au/unsw/) out! 🙏 Thanks for coming to the tutorials and good luck for your exams and beyond :)
