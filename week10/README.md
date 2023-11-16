@@ -19,3 +19,9 @@ Darian (one of the other tutors) made a really small [practice exam](https://git
 ## MyExperience
 
 Please fill [MyExperience](https://myexperience.unsw.edu.au/unsw/) out! 🙏 Thanks for coming to the tutorials and good luck for your exams and beyond :)
+
+From Hayden's end of week 9 update:
+
+> ⚠️ ALSO!‼️ For 🥔 every %🥔 that we score over 45% I will add 💗1 extra minute💗 onto the final exam!
+> 
+> That means that if get 50% completion, you get 5 extra minutes. If we get 60% completion, you get 15 extra minutes. If we get 100% completion, you get 55 extra minutes!! Wow 👩‍💻
